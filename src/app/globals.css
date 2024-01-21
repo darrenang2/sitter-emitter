@@ -8,7 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -30,4 +30,70 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.mb-32{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  width: 100%;
+}
+
+#emergency{
+  background: red;
+}
+
+#emergency:hover{
+  background: rgb(238, 89, 89);
+  border: 2px solid red;
+}
+
+button{
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+}
+
+#tier1{
+  background: #55C044;
+}
+
+#tier1:hover{
+  background: #8ac581;
+  border: 2px solid #55C044;
+}
+
+#tier2{
+  background: #ECA419;
+}
+
+#tier2:hover{
+  background: #e9b651;
+  ;
+  border: 2px solid #ECA419;
+  ;
+}
+
+#tier3{
+  background: #4333F6;
+}
+
+#tier3:hover{
+  background: #685cef;
+  border: 2px solid #4333F6;
+  ;
+}
+.imgWithDes{
+  text-align: center;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.des{
+  color: black;
 }
