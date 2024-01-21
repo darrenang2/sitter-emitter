@@ -1,6 +1,9 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-1">
+      <div className="relative">
+        <div className="opacity-50">
+        <Image src="/midori.jpg" alt="Baby pic" width={1500} height={500} />
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <div className="flex justify-center space-x-4 mx-8">
           <p className="flex flex-1 justify-center bg-gray-400 rounded p-6 shadow">
@@ -14,8 +17,12 @@ export default function Home() {
             a break without worry
           </p>
         </div>
+    </div>
+  <p className= "absolute top-0 left-1/2 transform -translate-x-1/2 text-white p-20 text-7xl font-serif">
+    Sitter Emitter
+  </p>
       </div>
-
+</div>
       <div className="mb-32 grid text-center lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <div className="imgWithDes">
           <a href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app">
